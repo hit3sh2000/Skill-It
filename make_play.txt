@@ -1,0 +1,15 @@
+step 1) It will check if gameover is T/F and board[position] !== "" then if any of this is true it will return false 
+
+step 2) cons Currentsymbol is created which will have "O" or "X" by using symbol.option array
+        and asigning the symbol to the board with following position i.e element we have clicked
+
+step 3) Calling draw function which will map the array and diplay the symbol
+    
+step 4)Then calling check_winning_sequences with symbolas parameter and saving it in winning_sequence_index
+        inside  check_winning_sequences we check patterns and if any patter match then consloe.log patter and return i that will be index of winner_sequences
+
+step 5) IF winning_sequence_indexis >= 0 then calling game_is_over() function and calling stylize_winner_sequence in which 
+        passing winner_sequence with winning_sequence_index and diplay the winning sequence 
+
+step 6) IF not winning_sequence_indexis >= 0 then will calling change() funtion inside symbol object which will change
+        the index i.e if index is 0 then 1 else 0
